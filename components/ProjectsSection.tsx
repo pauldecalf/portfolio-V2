@@ -53,14 +53,20 @@ export const ProjectsSection: React.FC = () => {
     },
     {
       "id": 3,
-      "title": "Smoozy",
-      "description": "Application ludique et interactive dédiée aux familles recomposées, facilitant la communication, le suivi des émotions et la gestion des tâches quotidiennes.",
+      "title": "Smoozy – Application pour familles recomposées",
+      "description": "Smoozy est une application web pensée pour améliorer le quotidien des familles recomposées. Elle permet de créer des profils pour chaque membre, suivre les humeurs via un journal partagé, organiser les tâches du quotidien de manière ludique, et faciliter la communication familiale grâce à une interface intuitive.",
       "image": "/images/smoozy.png",
-      "technologies": ["PHP", "Symfony", "MySQL", "JavaScript", "Bootstrap"],
+      "technologies": [
+        "Symfony",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "Bootstrap"
+      ],
+      "githubUrl": "",
       "liveUrl": "https://smoozy.pauldecalf.fr/",
       "featured": true
-    }
-    ,
+    },
     {
       id: 4,
       title: 'Système de Réservation',

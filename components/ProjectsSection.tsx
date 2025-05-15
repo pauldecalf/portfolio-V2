@@ -55,7 +55,7 @@ export const ProjectsSection: React.FC = () => {
       "id": 3,
       "title": "Smoozy",
       "description": "Application ludique et interactive dédiée aux familles recomposées, facilitant la communication, le suivi des émotions et la gestion des tâches quotidiennes.",
-      "image": "https://smoozy.pauldecalf.fr/images/famille-recomposee-epanouie.jpg",
+      "image": "/images/smoozy.png",
       "technologies": ["PHP", "Symfony", "MySQL", "JavaScript", "Bootstrap"],
       "liveUrl": "https://smoozy.pauldecalf.fr/",
       "featured": true

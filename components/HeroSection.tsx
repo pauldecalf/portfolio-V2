@@ -83,7 +83,7 @@ export const HeroSection: React.FC = () => {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="absolute w-72 h-72 rounded-full bg-indigo-500/30 blur-md"></div>
                     <img
-                      src="https://sdmntpritalynorth.oaiusercontent.com/files/00000000-a018-6246-9d40-f9203693064d/raw?se=2025-05-14T22%3A33%3A38Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=0a4a0f0c-99ac-4752-9d87-cfac036fa93f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-14T06%3A10%3A15Z&ske=2025-05-15T06%3A10%3A15Z&sks=b&skv=2024-08-04&sig=W1X8Sf6EaJrCujAixGSALmzynpuLtihkrX9Qi%2Bn/HOc%3D"
+                      src="./images/img_profil.png"
                       alt="Paul Decalf"
                       className="rounded-full w-64 h-64 object-cover border-4 border-white dark:border-gray-800 shadow-lg relative z-10"
                     />

@@ -52,16 +52,15 @@ export const ProjectsSection: React.FC = () => {
       "featured": true
     },
     {
-      id: 3,
-      title: 'Portail Immobilier',
-      description:
-        'Plateforme de publication d’annonces avec recherche avancée, comptes utilisateurs et interface agents.',
-      image:
-        'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Symfony', 'PHP', 'MySQL', 'jQuery', 'Bootstrap', 'AWS'],
-      liveUrl: 'https://example.com',
-      featured: true,
-    },
+      "id": 3,
+      "title": "Smoozy",
+      "description": "Application ludique et interactive dédiée aux familles recomposées, facilitant la communication, le suivi des émotions et la gestion des tâches quotidiennes.",
+      "image": "https://smoozy.pauldecalf.fr/images/famille-recomposee-epanouie.jpg",
+      "technologies": ["PHP", "Symfony", "MySQL", "JavaScript", "Bootstrap"],
+      "liveUrl": "https://smoozy.pauldecalf.fr/",
+      "featured": true
+    }
+    ,
     {
       id: 4,
       title: 'Système de Réservation',

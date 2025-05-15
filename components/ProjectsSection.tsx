@@ -81,7 +81,7 @@ export const ProjectsSection: React.FC = () => {
       ],
       "githubUrl": "",
       "liveUrl": "https://moi-sans-ia.pauldecalf.fr/",
-      "featured": true
+      "featured": false
     },
     {
       id: 5,

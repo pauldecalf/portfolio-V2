@@ -22,7 +22,7 @@ export const ProjectsSection: React.FC = () => {
       "id": 1,
       "title": "Bakougie – Boutique en ligne de bougies artisanales",
       "description": "Bakougie est une boutique en ligne spécialisée dans la vente de bougies artisanales parfumées, fondants, suspensions et accessoires. La plateforme propose une expérience utilisateur fluide avec gestion des produits, panier, intégration de paiement sécurisé et suivi des commandes.",
-      "image": "/images/bakougie.png",  // Remplacez par une image représentative du site
+      "image": "/images/bakougie.png",
       "technologies": [
         "Shopify",
         "Liquid",
@@ -38,7 +38,7 @@ export const ProjectsSection: React.FC = () => {
       "id": 2,
       "title": "WebCréation – Agence de création de sites web",
       "description": "WebCréation est une agence spécialisée dans la conception de sites internet professionnels sur mesure pour PME, indépendants et artisans. Elle propose des services complets incluant la création de sites vitrines, e-commerce, le référencement SEO, la refonte de sites existants, ainsi que la maintenance et l'assistance technique.",
-      "image": "/images/webcreation.png",  // Remplacez par une image représentative du site
+      "image": "/images/webcreation.png",
       "technologies": [
         "Next.js",
         "React",
@@ -48,7 +48,7 @@ export const ProjectsSection: React.FC = () => {
         "SEO"
       ],
       "githubUrl": "",
-      "liveUrl": "https://webcreation-wine.vercel.app/",
+      "liveUrl": "https://webcreation.pauldecalf.fr/",
       "featured": true
     },
     {

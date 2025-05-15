@@ -68,15 +68,20 @@ export const ProjectsSection: React.FC = () => {
       "featured": true
     },
     {
-      id: 4,
-      title: 'Système de Réservation',
-      description:
-        'Application de prise de rendez-vous pour un réseau de cliniques médicales avec intégration calendrier.',
-      image:
-        'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Symfony', 'PHP', 'MySQL', 'JavaScript', 'Docker'],
-      githubUrl: 'https://github.com',
-      featured: false,
+      "id": 4,
+      "title": "Le MOI sans IA – Campagne de sensibilisation à l'usage de l'IA",
+      "description": "Le MOI sans IA est un site de sensibilisation visant à encourager une utilisation raisonnée des intelligences artificielles dans la vie quotidienne. Il met en lumière les risques d'une dépendance excessive aux outils numériques et propose des ressources pour aider les utilisateurs à retrouver un équilibre technologique.",
+      "image": "/images/le-moi-sans-ia.png",
+      "technologies": [
+        "PHP",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Docker"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://moi-sans-ia.pauldecalf.fr/",
+      "featured": true
     },
     {
       id: 5,

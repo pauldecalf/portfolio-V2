@@ -84,16 +84,22 @@ export const ProjectsSection: React.FC = () => {
       "featured": false
     },
     {
-      id: 5,
-      title: 'Système de Gestion de Contenu',
-      description:
-        'CMS sur mesure pour un éditeur de magazine avec gestion de workflow éditorial et outils d’édition.',
-      image:
-        'https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Symfony', 'PHP', 'PostgreSQL', 'Vue.js', 'Tailwind CSS'],
-      liveUrl: 'https://example.com',
-      featured: false,
-    },
+      "id": 4,
+      "title": "Jules et son Atelier – Réparation de smartphones et tablettes",
+      "description": "Jules et son Atelier est un service de réparation spécialisé dans les smartphones et tablettes, offrant des solutions rapides et efficaces pour divers problèmes matériels et logiciels. Le site présente les services disponibles, les tarifs, et permet aux clients de prendre rendez-vous en ligne.",
+      "image": "/images/jsa.png",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "Docker"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://jsa.pauldecalf.fr/",
+      "featured": true
+    }
+    ,
     {
       id: 6,
       title: 'Plateforme de Formation',

@@ -19,34 +19,37 @@ export const ProjectsSection: React.FC = () => {
 
   const projects: Project[] = [
     {
-      id: 1,
-      title: 'Plateforme E-commerce',
-      description:
-        'Une solution e-commerce complète avec gestion des produits, panier, intégration de paiement et suivi des commandes.',
-      image:
-        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: [
-        'Symfony',
-        'PHP',
-        'MySQL',
-        'Redis',
-        'JavaScript',
-        'Bootstrap',
+      "id": 1,
+      "title": "Bakougie – Boutique en ligne de bougies artisanales",
+      "description": "Bakougie est une boutique en ligne spécialisée dans la vente de bougies artisanales parfumées, fondants, suspensions et accessoires. La plateforme propose une expérience utilisateur fluide avec gestion des produits, panier, intégration de paiement sécurisé et suivi des commandes.",
+      "image": "/images/bakougie.png",  // Remplacez par une image représentative du site
+      "technologies": [
+        "Shopify",
+        "Liquid",
+        "HTML",
+        "CSS",
+        "JavaScript"
       ],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      featured: true,
-    },
+      "githubUrl": "",
+      "liveUrl": "https://bakougie.fr",
+      "featured": true
+    },    
     {
-      id: 2,
-      title: 'Système CRM',
-      description:
-        'CRM personnalisé pour une agence marketing avec gestion des clients, suivi de projets et rapports automatisés.',
-      image:
-        'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Symfony', 'PHP', 'PostgreSQL', 'Vue.js', 'Docker'],
-      githubUrl: 'https://github.com',
-      featured: true,
+      "id": 2,
+      "title": "WebCréation – Agence de création de sites web",
+      "description": "WebCréation est une agence spécialisée dans la conception de sites internet professionnels sur mesure pour PME, indépendants et artisans. Elle propose des services complets incluant la création de sites vitrines, e-commerce, le référencement SEO, la refonte de sites existants, ainsi que la maintenance et l'assistance technique.",
+      "image": "/images/webcreation.png",  // Remplacez par une image représentative du site
+      "technologies": [
+        "Next.js",
+        "React",
+        "Vercel",
+        "Tailwind CSS",
+        "Node.js",
+        "SEO"
+      ],
+      "githubUrl": "",
+      "liveUrl": "https://webcreation-wine.vercel.app/",
+      "featured": true
     },
     {
       id: 3,

@@ -97,7 +97,7 @@ export const ProjectsSection: React.FC = () => {
       ],
       "githubUrl": "",
       "liveUrl": "https://jsa.pauldecalf.fr/",
-      "featured": true
+      "featured": false
     }
     ,
     {

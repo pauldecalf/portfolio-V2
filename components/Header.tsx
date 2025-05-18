@@ -49,24 +49,11 @@ export const Header: React.FC = () => {
             <button onClick={() => scrollToSection('contact')} className="nav-button cursor-pointer">Contact / Devis</button>
 
             {/* Thème */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 cursor-pointer"
-              aria-label="Changer de thème"
-            >
-              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
           </nav>
 
           {/* Boutons mobile */}
           <div className="flex items-center md:hidden space-x-4">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 cursor-pointer"
-              aria-label="Changer de thème"
-            >
-              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+
             <button
               onClick={toggleMenu}
               className="text-gray-700 dark:text-gray-300 cursor-pointer"

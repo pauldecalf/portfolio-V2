@@ -16,10 +16,12 @@ export const ContactSection: React.FC = () => {
     submitted: boolean
     success: boolean
     message: string
+    loading?: boolean
   }>({
     submitted: false,
     success: false,
     message: '',
+    loading: false,
   })
 
   const handleChange = (
@@ -34,7 +36,7 @@ export const ContactSection: React.FC = () => {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!formData.name || !formData.email || !formData.message) {
       setFormStatus({
@@ -45,18 +47,65 @@ export const ContactSection: React.FC = () => {
       return
     }
 
+    // Indication de chargement
     setFormStatus({
       submitted: true,
-      success: true,
-      message: 'Merci ! Votre message a bien été envoyé.',
+      success: false,
+      message: 'Envoi en cours...',
+      loading: true,
     })
 
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    })
+    try {
+      // Utilisation de Formspree pour l'envoi
+      const response = await fetch('https://formspree.io/f/xyzworel', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject || 'Formulaire de contact Portfolio',
+          message: formData.message
+        }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        // Succès
+        setFormStatus({
+          submitted: true,
+          success: true,
+          message: 'Merci ! Votre message a bien été envoyé.',
+          loading: false,
+        })
+
+        // Réinitialisation du formulaire
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        })
+      } else {
+        // Erreur
+        setFormStatus({
+          submitted: true,
+          success: false,
+          message: data.message || 'Une erreur est survenue lors de l\'envoi.',
+          loading: false,
+        })
+      }
+    } catch (error) {
+      // Erreur de réseau ou autre
+      setFormStatus({
+        submitted: true,
+        success: false,
+        message: 'Une erreur de connexion est survenue. Veuillez réessayer plus tard.',
+        loading: false,
+      })
+    }
   }
 
   return (
@@ -85,10 +134,10 @@ export const ContactSection: React.FC = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
                   <a
-                    href="mailto:contact@PaulDecalf.com"
+                    href="mailto:pauldecalf@outlook.fr"
                     className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
                   >
-                    contact@PaulDecalf.com
+                    pauldecalf@outlook.fr
                   </a>
                 </div>
               </div>
@@ -102,7 +151,7 @@ export const ContactSection: React.FC = () => {
                     href="tel:+33612345678"
                     className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
                   >
-                    +33 6 12 34 56 78
+                    +33 6 25 26 73 11
                   </a>
                 </div>
               </div>
@@ -113,7 +162,7 @@ export const ContactSection: React.FC = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Localisation</h4>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Lyon, France
+                    Paris, France
                   </p>
                 </div>
               </div>
@@ -146,6 +195,7 @@ export const ContactSection: React.FC = () => {
                   onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   required
+                  disabled={formStatus.loading}
                 />
               </div>
               <div className="mb-4">
@@ -163,6 +213,7 @@ export const ContactSection: React.FC = () => {
                   onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   required
+                  disabled={formStatus.loading}
                 />
               </div>
               <div className="mb-4">
@@ -178,6 +229,7 @@ export const ContactSection: React.FC = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  disabled={formStatus.loading}
                 >
                   <option value="">Choisir un sujet</option>
                   <option value="Création de site web">Création de site web</option>
@@ -202,15 +254,23 @@ export const ContactSection: React.FC = () => {
                   onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   required
+                  disabled={formStatus.loading}
                 ></textarea>
               </div>
               <Button
                 type="submit"
                 variant="primary"
                 className="w-full flex items-center justify-center"
+                disabled={formStatus.loading}
               >
-                <Send size={18} className="mr-2" />
-                Envoyer le message
+                {formStatus.loading ? (
+                  'Envoi en cours...'
+                ) : (
+                  <>
+                    <Send size={18} className="mr-2" />
+                    Envoyer le message
+                  </>
+                )}
               </Button>
             </form>
           </div>

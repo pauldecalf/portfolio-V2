@@ -78,7 +78,7 @@ export const SkillsSection: React.FC = () => {
         },
         {
           name: 'Tailwind CSS',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+          icon: 'https://www.svgrepo.com/show/374118/tailwind.svg',
           level: 80,
         },
       ],
@@ -153,16 +153,8 @@ export const SkillsSection: React.FC = () => {
                         />
                         <span className="font-medium">{skill.name}</span>
                       </div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">
-                        {skill.level}%
-                      </span>
                     </div>
-                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                      <div
-                        className="bg-indigo-600 dark:bg-indigo-400 h-2.5 rounded-full"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                    
                   </div>
                 ))}
               </div>

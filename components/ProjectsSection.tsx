@@ -84,7 +84,7 @@ export const ProjectsSection: React.FC = () => {
       "featured": false
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Jules et son Atelier – Réparation de smartphones et tablettes",
       "description": "Jules et son Atelier est un service de réparation spécialisé dans les smartphones et tablettes, offrant des solutions rapides et efficaces pour divers problèmes matériels et logiciels. Le site présente les services disponibles, les tarifs, et permet aux clients de prendre rendez-vous en ligne.",
       "image": "/images/jsa.png",
@@ -99,19 +99,6 @@ export const ProjectsSection: React.FC = () => {
       "liveUrl": "https://jsa.pauldecalf.fr/",
       "featured": false
     }
-    ,
-    {
-      id: 6,
-      title: 'Plateforme de Formation',
-      description:
-        'Site d’apprentissage en ligne avec vidéos, quiz et suivi de progression des étudiants.',
-      image:
-        'https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Symfony', 'PHP', 'MySQL', 'JavaScript', 'AWS'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      featured: false,
-    },
   ]
 
   const visibleProjects = showAll

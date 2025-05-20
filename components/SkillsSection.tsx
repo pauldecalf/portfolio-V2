@@ -108,7 +108,7 @@ export const SkillsSection: React.FC = () => {
         },
         {
           name: 'AWS',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
+          icon: 'https://cdn.iconscout.com/icon/free/png-512/free-aws-logo-icon-download-in-svg-png-gif-file-formats--cloud-computing-network-server-database-brand-pack-logos-icons-1583149.png?f=webp&w=256',
           level: 70,
         },
         {

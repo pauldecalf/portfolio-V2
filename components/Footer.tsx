@@ -131,27 +131,27 @@ export const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-4">Légal</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
+                <a href="/legal/privacy-policy" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
                   Politique de confidentialité
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
+                <a href="/legal/terms" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
                   Conditions d'utilisation
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
+                <a href="/legal/cookies" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
                   Politique des cookies
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
+                <a href="/legal/legal-notice" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
                   Mentions légales
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
+                <a href="/legal/terms-of-sale" className="text-gray-400 hover:text-indigo-400 transition-colors cursor-pointer">
                   CGV
                 </a>
               </li>

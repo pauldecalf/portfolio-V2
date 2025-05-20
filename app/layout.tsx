@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TawktoChat from '../components/TawktoChat';
-import GoogleAnalytics from '../components/GoogleAnalytics';
 import CookieConsent from '../components/CookieConsent';
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -73,7 +73,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <GoogleAnalytics />
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-HRQQHSY63H"
+        strategy="beforeInteractive"
+      />
+      <Script id="google-analytics" strategy="beforeInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          
+          // Configuration initiale avec mode de consentement
+          gtag('config', 'G-HRQQHSY63H', {
+            'consent_mode': 'default',
+            'ads_data_redaction': true,
+            'url_passthrough': true
+          });
+        `}
+      </Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

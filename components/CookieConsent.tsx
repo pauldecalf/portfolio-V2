@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
-// Définir le type pour window.dataLayer
+// Définir le type pour window.dataLayer et gtag
 declare global {
   interface Window {
     dataLayer: any[];
+    gtag: (...args: any[]) => void;
   }
 }
 
@@ -16,8 +17,30 @@ export default function CookieConsent() {
   useEffect(() => {
     // Vérifie si l'utilisateur a déjà donné son consentement
     const consent = localStorage.getItem('cookie-consent');
+    
+    // Initialisation de gtag de façon passive (pas de tracking)
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(...args) {
+      if (consent === 'accepted') {
+        window.dataLayer.push(arguments);
+      } else if (args[0] === 'consent') {
+        // Permet toujours les commandes de consentement
+        window.dataLayer.push(arguments);
+      }
+      // Ignore les autres commandes si le consentement n'est pas donné
+    };
+    
+    // Configure le consentement par défaut: refusé
     if (!consent) {
+      window.gtag('consent', 'default', {
+        'analytics_storage': 'denied'
+      });
       setShowBanner(true);
+    } else if (consent === 'accepted') {
+      // Si déjà accepté, active le suivi
+      window.gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
     }
   }, []);
 
@@ -25,18 +48,23 @@ export default function CookieConsent() {
     localStorage.setItem('cookie-consent', 'accepted');
     setShowBanner(false);
     
-    // Active Google Analytics
-    window.dataLayer = window.dataLayer || [];
-    function gtag(...args: any[]) {
-      window.dataLayer.push(args);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-HRQQHSY63H');
+    // Active le suivi Google Analytics
+    window.gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+    
+    // Recharge la page pour s'assurer que GA commence à tracker correctement
+    window.location.reload();
   };
 
   const declineCookies = () => {
     localStorage.setItem('cookie-consent', 'declined');
     setShowBanner(false);
+    
+    // Désactive explicitement le suivi
+    window.gtag('consent', 'update', {
+      'analytics_storage': 'denied'
+    });
   };
 
   if (!showBanner) return null;

@@ -18,32 +18,32 @@ export const SkillsSection: React.FC = () => {
       skills: [
         {
           name: 'PHP',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+          icon: '/images/icons/php-original.svg',
           level: 95,
         },
         {
           name: 'Symfony',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg',
+          icon: '/images/icons/symfony-original.svg',
           level: 90,
         },
         {
           name: 'MySQL',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+          icon: '/images/icons/mysql-original.svg',
           level: 85,
         },
         {
           name: 'PostgreSQL',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+          icon: '/images/icons/postgresql-original.svg',
           level: 80,
         },
         {
           name: 'Redis',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
+          icon: '/images/icons/redis-original.svg',
           level: 75,
         },
         {
           name: 'REST API',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+          icon: '/images/icons/nodejs-original.svg',
           level: 85,
         },
       ],
@@ -53,32 +53,32 @@ export const SkillsSection: React.FC = () => {
       skills: [
         {
           name: 'JavaScript',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+          icon: '/images/icons/javascript-original.svg',
           level: 80,
         },
         {
           name: 'HTML5',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+          icon: '/images/icons/html5-original.svg',
           level: 90,
         },
         {
           name: 'CSS3',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+          icon: '/images/icons/css3-original.svg',
           level: 85,
         },
         {
           name: 'Vue.js',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+          icon: '/images/icons/vuejs-original.svg',
           level: 75,
         },
         {
           name: 'Bootstrap',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
+          icon: '/images/icons/bootstrap-original.svg',
           level: 85,
         },
         {
           name: 'Tailwind CSS',
-          icon: 'https://www.svgrepo.com/show/374118/tailwind.svg',
+          icon: '/images/icons/tailwind.svg',
           level: 80,
         },
       ],
@@ -88,32 +88,32 @@ export const SkillsSection: React.FC = () => {
       skills: [
         {
           name: 'Docker',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+          icon: '/images/icons/docker-original.svg',
           level: 80,
         },
         {
           name: 'Git',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+          icon: '/images/icons/git-original.svg',
           level: 90,
         },
         {
           name: 'CI/CD',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg',
+          icon: '/images/icons/jenkins-original.svg',
           level: 75,
         },
         {
           name: 'Linux',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+          icon: '/images/icons/linux-original.svg',
           level: 85,
         },
         {
           name: 'AWS',
-          icon: 'https://cdn.iconscout.com/icon/free/png-512/free-aws-logo-icon-download-in-svg-png-gif-file-formats--cloud-computing-network-server-database-brand-pack-logos-icons-1583149.png?f=webp&w=256',
+          icon: '/images/icons/1583149.webp',
           level: 70,
         },
         {
           name: 'Nginx',
-          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
+          icon: '/images/icons/nginx-original.svg',
           level: 75,
         },
       ],

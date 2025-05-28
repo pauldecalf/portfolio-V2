@@ -22,7 +22,7 @@ export const ProjectsSection: React.FC = () => {
       "id": 1,
       "title": "Bakougie – Boutique en ligne de bougies artisanales",
       "description": "Bakougie est une boutique en ligne spécialisée dans la vente de bougies artisanales parfumées, fondants, suspensions et accessoires. La plateforme propose une expérience utilisateur fluide avec gestion des produits, panier, intégration de paiement sécurisé et suivi des commandes.",
-      "image": "/images/bakougie.png",
+      "image": "/images/bakougie.webp",
       "technologies": [
         "Shopify",
         "Liquid",
@@ -38,7 +38,7 @@ export const ProjectsSection: React.FC = () => {
       "id": 2,
       "title": "WebCréation – Agence de création de sites web",
       "description": "WebCréation est une agence spécialisée dans la conception de sites internet professionnels sur mesure pour PME, indépendants et artisans. Elle propose des services complets incluant la création de sites vitrines, e-commerce, le référencement SEO, la refonte de sites existants, ainsi que la maintenance et l'assistance technique.",
-      "image": "/images/webcreation.png",
+      "image": "/images/webcreation.webp",
       "technologies": [
         "Next.js",
         "React",
@@ -55,7 +55,7 @@ export const ProjectsSection: React.FC = () => {
       "id": 3,
       "title": "Smoozy – Application pour familles recomposées",
       "description": "Smoozy est une application web pensée pour améliorer le quotidien des familles recomposées. Elle permet de créer des profils pour chaque membre, suivre les humeurs via un journal partagé, organiser les tâches du quotidien de manière ludique, et faciliter la communication familiale grâce à une interface intuitive.",
-      "image": "/images/smoozy.png",
+      "image": "/images/smoozy.webp",
       "technologies": [
         "Symfony",
         "PHP",
@@ -71,7 +71,7 @@ export const ProjectsSection: React.FC = () => {
       "id": 4,
       "title": "Le MOI sans IA – Campagne de sensibilisation à l'usage de l'IA",
       "description": "Le MOI sans IA est un site de sensibilisation visant à encourager une utilisation raisonnée des intelligences artificielles dans la vie quotidienne. Il met en lumière les risques d'une dépendance excessive aux outils numériques et propose des ressources pour aider les utilisateurs à retrouver un équilibre technologique.",
-      "image": "/images/le-moi-sans-ia.png",
+      "image": "/images/le-moi-sans-ia.webp",
       "technologies": [
         "PHP",
         "HTML",
@@ -87,7 +87,7 @@ export const ProjectsSection: React.FC = () => {
       "id": 5,
       "title": "Jules et son Atelier – Réparation de smartphones et tablettes",
       "description": "Jules et son Atelier est un service de réparation spécialisé dans les smartphones et tablettes, offrant des solutions rapides et efficaces pour divers problèmes matériels et logiciels. Le site présente les services disponibles, les tarifs, et permet aux clients de prendre rendez-vous en ligne.",
-      "image": "/images/jsa.png",
+      "image": "/images/jsa.webp",
       "technologies": [
         "HTML",
         "CSS",

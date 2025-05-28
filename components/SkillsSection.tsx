@@ -150,6 +150,7 @@ export const SkillsSection: React.FC = () => {
                           src={skill.icon}
                           alt={skill.name}
                           className="w-6 h-6 mr-3"
+                          loading="lazy"
                         />
                         <span className="font-medium">{skill.name}</span>
                       </div>

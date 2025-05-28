@@ -138,6 +138,7 @@ export const ProjectsSection: React.FC = () => {
                         src={`/images/${baseName}_mobile.webp`}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                        loading="lazy"
                       />
                     </picture>
                   ) : (
@@ -145,6 +146,7 @@ export const ProjectsSection: React.FC = () => {
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                      loading="lazy"
                     />
                   )}
                 </div>

@@ -74,7 +74,6 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="stylesheet" href="/app/globals.css" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-HRQQHSY63H"
           strategy="beforeInteractive"

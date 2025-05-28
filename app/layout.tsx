@@ -73,6 +73,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="preload" href="/app/globals.css" as="style" onLoad="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="/app/globals.css" /></noscript>
+      </head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-HRQQHSY63H"
         strategy="beforeInteractive"

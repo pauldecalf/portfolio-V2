@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
     // Désactiver les vérifications TypeScript lors de la construction
     ignoreBuildErrors: true,
   },
+  experimental: {
+    legacyBrowsers: false,
+    browsersListForSwc: true,
+  },
 };
 
 export default nextConfig;

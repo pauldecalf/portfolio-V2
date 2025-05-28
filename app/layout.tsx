@@ -74,27 +74,26 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="preload" href="/app/globals.css" as="style" onLoad="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="/app/globals.css" /></noscript>
+        <link rel="stylesheet" href="/app/globals.css" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HRQQHSY63H"
+          strategy="beforeInteractive"
+        />
+        <Script id="google-analytics" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            // Configuration initiale avec mode de consentement
+            gtag('config', 'G-HRQQHSY63H', {
+              'consent_mode': 'default',
+              'ads_data_redaction': true,
+              'url_passthrough': true
+            });
+          `}
+        </Script>
       </head>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-HRQQHSY63H"
-        strategy="beforeInteractive"
-      />
-      <Script id="google-analytics" strategy="beforeInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          
-          // Configuration initiale avec mode de consentement
-          gtag('config', 'G-HRQQHSY63H', {
-            'consent_mode': 'default',
-            'ads_data_redaction': true,
-            'url_passthrough': true
-          });
-        `}
-      </Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

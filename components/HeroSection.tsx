@@ -88,6 +88,7 @@ export const HeroSection: React.FC = () => {
                         src="./images/img_profil_mobile.webp"
                         alt="Paul Decalf"
                         className="rounded-full w-64 h-64 object-cover border-4 border-white dark:border-gray-800 shadow-lg relative z-10"
+                        fetchPriority="high"
                       />
                     </picture>
                   </div>

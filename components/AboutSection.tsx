@@ -16,7 +16,7 @@ export const AboutSection: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="flex-1">
             <img
-              src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="/images/photo-1571171637578-41bc2dd41cd2.avif"
               alt="Développeur en train de travailler"
               className="rounded-lg shadow-lg w-full object-cover h-96"
             />
@@ -26,7 +26,7 @@ export const AboutSection: React.FC = () => {
               Développeur Fullstack Freelance – PHP / Symfony
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-6">
-              Fort de plusieurs années d'expérience en développement web, je suis spécialisé dans la création d'applications robustes, évolutives et performantes grâce au framework Symfony. Mon parcours m’a permis de collaborer avec des PME, startups et indépendants pour transformer leurs idées en projets concrets.
+              Fort de plusieurs années d'expérience en développement web, je suis spécialisé dans la création d'applications robustes, évolutives et performantes grâce au framework Symfony. Mon parcours m'a permis de collaborer avec des PME, startups et indépendants pour transformer leurs idées en projets concrets.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-8">
               En tant que freelance, je privilégie la qualité, la communication claire et l'accompagnement personnalisé. Chaque projet est une opportunité de livrer un produit fiable, maintenable et aligné sur les objectifs de mes clients.

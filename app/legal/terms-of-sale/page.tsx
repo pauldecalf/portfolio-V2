@@ -21,7 +21,7 @@ export default function TermsOfSale() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">2. Prestations proposées</h2>
         <p className="mb-4">
-          Les prestations disponibles incluent, sans s’y limiter : la création de sites internet, la refonte, l’optimisation SEO, les audits techniques, ainsi que le conseil personnalisé. Chaque service est décrit dans le devis transmis avant validation.
+          Les prestations disponibles incluent, sans s'y limiter : la création de sites internet, la refonte, l'optimisation SEO, les audits techniques, ainsi que le conseil personnalisé. Chaque service est décrit dans le devis transmis avant validation.
         </p>
       </section>
 
@@ -35,7 +35,7 @@ export default function TermsOfSale() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">4. Commandes</h2>
         <p className="mb-4">
-          La commande est validée dès réception du devis signé et/ou du paiement de l’acompte demandé. Elle vaut acceptation entière et sans réserve des présentes conditions générales.
+          La commande est validée dès réception du devis signé et/ou du paiement de l'acompte demandé. Elle vaut acceptation entière et sans réserve des présentes conditions générales.
         </p>
       </section>
 
@@ -56,21 +56,21 @@ export default function TermsOfSale() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">7. Droit de rétractation</h2>
         <p className="mb-4">
-          Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation ne peut s’appliquer aux prestations pleinement exécutées avant la fin du délai de 14 jours, avec l’accord exprès du client. Dans tous les autres cas, vous disposez d’un délai de 14 jours pour changer d’avis à compter de la signature du devis.
+          Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation ne peut s'appliquer aux prestations pleinement exécutées avant la fin du délai de 14 jours, avec l'accord exprès du client. Dans tous les autres cas, vous disposez d'un délai de 14 jours pour changer d'avis à compter de la signature du devis.
         </p>
       </section>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">8. Garanties</h2>
         <p className="mb-4">
-          Les prestations bénéficient des garanties légales prévues par les articles 1641 et suivants du Code civil. En cas de défaut constaté, le client s’engage à en informer l’entrepreneur sous 14 jours après livraison.
+          Les prestations bénéficient des garanties légales prévues par les articles 1641 et suivants du Code civil. En cas de défaut constaté, le client s'engage à en informer l'entrepreneur sous 14 jours après livraison.
         </p>
       </section>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">9. Responsabilité</h2>
         <p className="mb-4">
-          La responsabilité de l’entrepreneur ne saurait être engagée pour tout dommage indirect lié à l’utilisation ou à l’impossibilité d’utiliser le site ou le service fourni, notamment en cas de perte de données ou de chiffre d’affaires.
+          La responsabilité de l'entrepreneur ne saurait être engagée pour tout dommage indirect lié à l'utilisation ou à l'impossibilité d'utiliser le site ou le service fourni, notamment en cas de perte de données ou de chiffre d'affaires.
         </p>
       </section>
 
@@ -84,7 +84,7 @@ export default function TermsOfSale() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">11. Contact</h2>
         <p className="mb-4">
-          Pour toute question relative aux présentes CGV, vous pouvez nous contacter à : <strong>pauldecalf@outlook.fr</strong>
+          Pour toute question relative aux présentes CGV, vous pouvez nous contacter à : <strong>contact@pauldecalf.fr</strong>
         </p>
       </section>
     </div>

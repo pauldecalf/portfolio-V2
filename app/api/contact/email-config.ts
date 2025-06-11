@@ -8,13 +8,13 @@ export const emailConfig = {
   port: 587,
   secure: false,
   auth: {
-    user: 'pauldecalf@outlook.fr',
+    user: 'contact@pauldecalf.fr',
     pass: 'Decalff93',
   },
   // Destinataire par défaut
-  defaultTo: 'pauldecalf@outlook.fr',
+  defaultTo: 'contact@pauldecalf.fr',
   // Expéditeur
-  from: 'Site Portfolio <pauldecalf@outlook.fr>',
+  from: 'Site Portfolio <contact@pauldecalf.fr>',
 }
 
 /*

@@ -27,7 +27,7 @@ export const emailConfig = {
     pass: 'votre-mot-de-passe-app', // Votre mot de passe d'application
   },
   // Destinataire par défaut (votre adresse email)
-  defaultTo: 'pauldecalf@outlook.fr',
+  defaultTo: 'contact@pauldecalf.fr',
   // Expéditeur
   from: 'Site Portfolio <votre.email@gmail.com>',
 }

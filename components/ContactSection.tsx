@@ -134,10 +134,10 @@ export const ContactSection: React.FC = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
                   <a
-                    href="mailto:pauldecalf@outlook.fr"
+                    href="mailto:contact@pauldecalf.fr"
                     className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
                   >
-                    pauldecalf@outlook.fr
+                    contact@pauldecalf.fr
                   </a>
                 </div>
               </div>
